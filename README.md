@@ -22,7 +22,7 @@ nhằm phục vụ cho việc đóng một gói tin lớp 3 (packet) vào một 
 
 <a name="2"></a>
 ### 2.Nguyên tắc hoạt động
-- Khi 1 thiêt bị mạng muốn biết địa chỉ Mac của thiết bị mạng nào đó nó sẽ gửi broadcast 1 ARP Request gồm: địa chỉ Mac của nó, IP của 
+- Khi 1 thiêt bị mạng muốn biết địa chỉ Mac của thiết bị mạng nào đó nó sẽ gửi broadcast 1 ARP Request gồm: địa chỉ Mac của nó, IP của
 thiết bị mà nó cần biết địa chỉ Mac.
 - Mỗi 1 thiết bị nhận được request này sẽ so sánh với IP của mình nếu giống nhau sẽ reply gói tin request có địa chỉ Mac của mình.
 
@@ -41,7 +41,9 @@ thiết bị mà nó cần biết địa chỉ Mac.
 
 <a name="3"></a>
 ### 3.Cấu trúc frame ARP
+
 <img src="http://i.imgur.com/n71Wi7c.jpg" />
+
 | Tên trường | Mô tả |
 |------------|-------|
 | Source MAC | địa chỉ MAC của thiết bị gửi đi frame Ethernet |
@@ -61,7 +63,9 @@ thiết bị mà nó cần biết địa chỉ Mac.
 ### 4.Bắt gói tin ARP
 - hiển thị bảng ARP với cmd: arp -a
 <img src="http://i.imgur.com/AA9Msqz.png" />
-- Thực hiện bắt gói tin ARP với wireshark.
+- Xóa bảng ARP với cmd: arp -d
+
+#### Thực hiện bắt gói tin ARP với wireshark.
 - Ping 192.168.100.17
 <img src="http://i.imgur.com/UfmVTS9.png" />
 
